@@ -1,8 +1,7 @@
 .app_background {
-  position: relative;
-  /* width: 100%;
-  height: 100%; */
-  font-family: "Consolas";
+  position: static;
+  font-family: "proxima-soft", "Proxima Soft", "Proxima Nova Soft", Helvetica,
+    Arial, sans-serif;
   font-size: 40px;
   font-weight: bold;
   padding: 25px;
