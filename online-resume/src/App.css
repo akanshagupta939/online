@@ -1,7 +1,6 @@
 .app_background {
-  position: static;
-  font-family: "proxima-soft", "Proxima Soft", "Proxima Nova Soft", Helvetica,
-    Arial, sans-serif;
+  position: relative;
+  font-family: "Courier New", Courier, monospace;
   font-size: 40px;
   font-weight: bold;
   padding: 25px;
