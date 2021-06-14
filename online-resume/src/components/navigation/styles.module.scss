@@ -1,0 +1,18 @@
+.link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li {
+  margin: 20px;
+}
+.box1 {
+  color: #fff;
+  padding-top: 60px;
+  padding-left: 50px;
+}
+
+.box1:hover {
+  text-align: center;
+}

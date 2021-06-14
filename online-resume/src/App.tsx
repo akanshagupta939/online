@@ -1,24 +1,14 @@
 import * as React from "react";
 import "reset-css";
 import "./App.css";
-import FrontUi from "./components/header/front-ui";
-import Header from "./components/header";
-import Pdf from "./assests/resume.pdf";
+import { Home } from "./components/home";
 import Particles from "react-particles-js";
+import { Error } from "./components/error";
 import ContactUs from "./components/contactUs";
+import { Route, Switch } from "react-router-dom";
+import About from "./components/about";
+import { Navigation } from "./components/navigation";
 
-const navigation = {
-  brand: { name: "Home", to: "/" },
-  links: [
-    { name: "About Me", to: "/about" },
-    { name: "Resume", to: { Pdf } },
-    {
-      name: "Linked In",
-      to: "https://www.linkedin.com/in/akansha-gupta-26125914a/",
-    },
-    { name: "Contact", to: "/contact" },
-  ],
-};
 const particleConfig: any = {
   particles: {
     number: {
@@ -59,7 +49,7 @@ const particleConfig: any = {
       },
     },
     line_linked: {
-      enable: true,
+      enable: false,
       distance: 150,
       color: "#c8c8c8",
       opacity: 0.4,
@@ -122,22 +112,21 @@ const particleConfig: any = {
   retina_detect: true,
 };
 
-const resumeDate = {
-  name: "Akansha",
-  role: "Software Engineer",
-  experience: "",
-};
 function App() {
-  const { brand, links } = navigation;
   return (
     <>
-      <Particles params={particleConfig} className="particles" />
-      <div className="app_background">
-        <Header brand={brand} links={links} />
-        <FrontUi resumeDate={resumeDate} />
-        {/* <About />
-         */}
-        {/* <Footer /> */}
+      <div>
+        <Particles params={particleConfig} className="container" />
+        <div className="inner_container">
+          <Navigation></Navigation>
+        </div>
+
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={ContactUs} />
+          <Route component={Error} />
+        </Switch>
       </div>
     </>
   );
