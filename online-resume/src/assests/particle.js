@@ -1,70 +1,56 @@
-import * as React from "react";
-import "reset-css";
-import "./App.css";
-import { Home } from "./components/home";
-import Particles from "react-particles-js";
-import { Error } from "./components/error";
-import ContactUs from "./components/contactUs";
-import { Route, Switch } from "react-router-dom";
-import About from "./components/about";
-import { Navigation } from "./components/navigation";
-
 const particleConfig: any = {
   particles: {
     number: {
       value: 80,
       density: {
         enable: true,
-        value_area: 700,
+        value_area: 800,
       },
     },
     color: {
-      value: "#ffffff",
+      value: ["#BD10E0", "#B8E986", "#50E3C2", "#FFD300", "#E86363"],
     },
     shape: {
       type: "circle",
       stroke: {
         width: 0,
-        color: "#000000",
-      },
-      polygon: {
-        nb_sides: 5,
+        color: "#b6b2b2",
       },
     },
     opacity: {
-      value: 0.5,
+      value: 0.5211089197812949,
       random: false,
       anim: {
-        enable: false,
-        speed: 0.1,
+        enable: true,
+        speed: 1,
         opacity_min: 0.1,
         sync: false,
       },
     },
     size: {
-      value: 3,
+      value: 8.017060304327615,
       random: true,
       anim: {
-        enable: false,
-        speed: 10,
+        enable: true,
+        speed: 12.181158184520175,
         size_min: 0.1,
-        sync: false,
+        sync: true,
       },
     },
     line_linked: {
-      enable: true,
+      enable: false,
       distance: 150,
-      color: "#ffffff",
+      color: "#c8c8c8",
       opacity: 0.4,
       width: 1,
     },
     move: {
       enable: true,
-      speed: 2,
+      speed: 0.5,
       direction: "none",
       random: false,
       straight: false,
-      out_mode: "out",
+      out_mode: "bounce",
       bounce: false,
       attract: {
         enable: false,
@@ -78,17 +64,17 @@ const particleConfig: any = {
     events: {
       onhover: {
         enable: true,
-        mode: "grab",
+        mode: "attract",
       },
       onclick: {
-        enable: true,
+        enable: false,
         mode: "push",
       },
       resize: true,
     },
     modes: {
       grab: {
-        distance: 140,
+        distance: 400,
         line_linked: {
           opacity: 1,
         },
@@ -114,25 +100,3 @@ const particleConfig: any = {
   },
   retina_detect: true,
 };
-
-function App() {
-  return (
-    <>
-      <body>
-        <Particles params={particleConfig} className="container" />
-        <div className="inner_container">
-          <Navigation></Navigation>
-        </div>
-
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={ContactUs} />
-          <Route component={Error} />
-        </Switch>
-      </body>
-    </>
-  );
-}
-
-export default App;

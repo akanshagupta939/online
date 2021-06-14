@@ -1,3 +1,6 @@
+$link: #d0a7c6;
+$link-hover: #b575a6;
+
 .body {
   font-size: 30px;
   font-weight: bold;
@@ -16,10 +19,21 @@
   text-align: center;
   justify-content: center;
   width: 60%;
+  color: #ebd9e6;
   padding: 300px 10px;
   font-family: "Consolas", "Courier New";
 }
 .outer_container:hover {
   font-size: 40px;
   text-align: center;
+}
+
+a,
+a:visited {
+  color: $link;
+  transition: 0.25s;
+}
+a:hover,
+a:focus {
+  color: $link-hover;
 }
