@@ -10,7 +10,7 @@ interface ResumeDate {
 const resumeDate = {
   name: "Akansha",
   role: "Software Engineer",
-  experience: "",
+  experience: "Java, Python and JavaScript",
 };
 export const Home = (resumeData: ResumeDate) => {
   return (

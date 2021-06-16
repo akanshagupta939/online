@@ -118,7 +118,7 @@ const particleConfig: any = {
 function App() {
   return (
     <>
-      <body>
+      <div>
         <Particles params={particleConfig} className="container" />
         <div className="inner_container">
           <Navigation></Navigation>
@@ -130,7 +130,7 @@ function App() {
           <Route path="/contact" component={ContactUs} />
           <Route component={Error} />
         </Switch>
-      </body>
+      </div>
     </>
   );
 }
