@@ -11,13 +11,6 @@ const About = () => {
           learning how to swim. I believe one should never stop learning.
         </h3>
         <br></br>
-        {/* <h1 className={styles.header}> Professional Summary</h1>
-        <h1 className={styles.body}>
-          Experienced software engineer with a passion for developing innovative
-          programs that expedite the efficiency and effectiveness of
-          organizational success. Well-versed in technology and writing code to
-          create systems that are reliable and user-friendly.
-        </h1> */}
         <br></br>
         <a className={styles.header} href="/Resume.pdf" download>
           Download Resume
