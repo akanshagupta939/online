@@ -16,3 +16,15 @@
 .navContainer:hover {
   text-align: center;
 }
+
+@media screen and (max-width: 1200px) {
+  .navContainer ul li {
+    pointer-events: auto;
+  }
+  .link {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
