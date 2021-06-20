@@ -118,7 +118,7 @@ const particleConfig: any = {
 function App() {
   return (
     <>
-      <div>
+      <div className="test">
         <Particles params={particleConfig} className="container" />
         <div className="inner_container">
           <Navigation></Navigation>

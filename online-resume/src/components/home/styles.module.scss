@@ -20,7 +20,22 @@
   color: #ebd9e6;
   font-family: "Consolas", "Courier New";
 }
-.outer_container:hover {
-  font-size: 40px;
-  text-align: center;
+// .outer_container:hover {
+//   font-size: 40px;
+//   text-align: center;
+// }
+@media screen and (max-width: 1200px) {
+  .header {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.6;
+  }
+  .body {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.6;
+  }
+  .outer_container {
+    top: 80px;
+  }
 }

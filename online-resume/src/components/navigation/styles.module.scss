@@ -2,17 +2,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-ul li {
+.navContainer ul li {
   margin: 20px;
+  pointer-events: auto;
 }
-.box1 {
+.navContainer {
   color: #fff;
-  padding-top: 60px;
-  padding-left: 50px;
 }
 
-.box1:hover {
+.navContainer:hover {
   text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .navContainer ul li {
+    pointer-events: auto;
+  }
+  .link {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
