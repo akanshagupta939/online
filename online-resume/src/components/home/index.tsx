@@ -14,15 +14,13 @@ const resumeDate = {
 };
 export const Home = (resumeData: ResumeDate) => {
   return (
-    <>
-      <div className={styles.outer_container}>
-        <h1 className={styles.header}> Hi I am {resumeDate.name}</h1>
-        <h3 className={styles.body}>
-          I am a {resumeDate.role}. I like dabbling in various part of front-end
-          development and like to learn new technologies. My skills are{" "}
-          {resumeDate.experience}.
-        </h3>
-      </div>
-    </>
+    <div className={styles.outer_container}>
+      <h1 className={styles.header}> Hi I am {resumeDate.name}</h1>
+      <h3 className={styles.body}>
+        I am a {resumeDate.role}. I like dabbling in various part of front-end
+        development and like to learn new technologies. My skills are{" "}
+        {resumeDate.experience}.
+      </h3>
+    </div>
   );
 };
